@@ -10,10 +10,7 @@ public class WizzairTest {
     @Test
     public void searchTicketsWizzair() {
         Configuration.baseUrl = "https://wizzair.com/";
-        Configuration.timeout = 60000;
-//      Configuration.browserVersion = "86.0.4240.111";
-//      Configuration.browser = "chrome";
-
+        Configuration.timeout = 30000;
         open("/");
 
         //Add departure station ("Vienna")
