@@ -9,7 +9,7 @@ public class Ryanair {
 
     @Test
     public void searchTicketsRyanair() {
-        Configuration.baseUrl = "https://www.ryanair.com/";
+        Configuration.baseUrl = "https://www.ryanair.com";
         Configuration.timeout = 10000;
 
         open("/");
@@ -37,7 +37,7 @@ public class Ryanair {
 
         //Verify that there are 2 blocks: Vienna-Kyiv, Kyiv-Vienna
         //Verify dates are 19 Nov and 21 Nov accordingly
-        $$("//flight-list").shouldHaveSize(2);
+        $$x("//flight-list").shouldHaveSize(2);
 
         $$x("//span[@class='date-item__day-of-month h4 date-item__day-of-month--selected']").get(0)
                 .shouldHave(Condition.text("19"));

@@ -1,5 +1,6 @@
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import java.awt.*;
@@ -7,11 +8,13 @@ import java.awt.event.KeyEvent;
 
 import static com.codeborne.selenide.Selenide.*;
 
+import static com.codeborne.selenide.Selenide.$$;
+
 public class Flyua {
 
     @Test
     public void searchTicketsFlyuia() throws AWTException {
-        Configuration.baseUrl = "https://www.flyuia.com/";
+        Configuration.baseUrl = "https://www.flyuia.com";
         Configuration.timeout = 10000;
         open("/");
 

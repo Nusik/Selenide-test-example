@@ -9,7 +9,7 @@ public class WizzairTest {
 
     @Test
     public void searchTicketsWizzair() {
-        Configuration.baseUrl = "https://wizzair.com/";
+        Configuration.baseUrl = "https://wizzair.com";
         Configuration.timeout = 30000;
         open("/");
 
