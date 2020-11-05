@@ -16,11 +16,7 @@ public class SearchFragment {
     }
 
 //    public SearchFragment searchProduct(String productName) {
-//     //1
 //    searchInput.val(productName).pressEnter();
-//    //2
-//            searchInput.val(productName).pressTab();
-//    actions().moveToElement(searchButtonSubmit).click();
 //        return this;
 //    }
 
