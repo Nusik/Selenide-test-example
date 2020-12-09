@@ -1,7 +1,8 @@
 # Selenide-test-example
 This is a student work
 
-TASKS:
+TASK 1:
+
 Implement test cases using Selenide and Page Object pattern, 
 
 use Fragment approach to avoid duplicating of methods on pages (SearchFragment, FilterFragment, BasketFragment).
@@ -171,3 +172,8 @@ Comparison
 - only 3 products in comparison
 
 - prices and names of products are correct
+
+
+TASK 2:
+1.Refactor HW26 (Citrus ui tests) according to Page steps approach. Add Allure to project, configure it, generate test results with steps
+2.Add Allure-rest-assured to HW27. Group ui and api tests in one framework. Add step details (request and response of every rest api call in tests) to report as attachments (Hint: use RestAssured.filters)
